@@ -1,0 +1,2116 @@
+/********************************
+ *********** GÉNÉRAL ************
+ ********************************/
+
+body {
+  	margin: 0;
+  	padding: 0;
+ 	background-image: url("../images/img_background_site_1920x1080.jpg");
+ 	background-attachment: fixed;
+}
+
+p{
+	font-family: 'Archivo Narrow', sans-serif;
+}
+
+/**** Langues ****/
+#languages {
+	position: absolute;
+	right: 30px;
+	top: 25px;
+}
+
+#languages img {
+	margin: 3px;
+	width: 30px;
+}
+
+/**** Active pour lien sélectionné ****/
+.menuDiv ul li a.active{
+		background-color: #254c74;
+}
+
+/**** Ancre avec effets ****/
+.cd-top{
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(26, 26, 26, 1) url(../images/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+ }
+ 
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: .7;
+}
+
+ /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+.cd-top.cd-fade-out { 
+  opacity: .5;
+}
+
+.cd-top:hover {
+  background-color: #1a1a1a;
+  opacity: 1;
+}
+
+/***************************
+ ***** PAGE D'ACCUEIL ******
+ ***************************/
+
+/**** Bloc principal ****/
+.mainDiv{
+	width: 70%;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	background-color: #CCEBFF;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+/**** Image Bienvenue international ****/
+.mainDiv #img_msg_bienvenue{
+	display: block;
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/********************************
+ 	1er bloc : À propos de moi  
+*********************************/	
+	
+/**** Point d'interrogation ****/
+#question_mark{
+	width: 5%;
+}
+
+/**** Question + image point d'interrogation ****/
+#who, #question_mark{
+	vertical-align: middle;
+	display: inline;
+}
+
+/**** Égaliser le texte sur les côtés ****/
+#aboutMe p{
+	text-align: justify;
+}
+
+/************************************************
+ 	2è bloc : Pourquoi avoir choisit la prog ?  
+*************************************************/
+
+/**** Valable pour les 3 blocs ****/
+.titreAccueil{
+	font-family: 'Cuprum', sans-serif;
+	text-shadow: 1px 1px 2px #1a1aff, 0 0 60px blue, 0 0 50px #3377ff;
+}
+
+#why{
+	margin: 20px;
+	padding: 10px;
+	background-color: white;
+}
+
+#pour{
+	margin-left: 27px;
+	margin-top: 20px;
+	font-family: 'Archivo Narrow', sans-serif;
+}
+
+.img_fleche{
+	width: 20px;
+	padding-left: 10px;
+}
+
+#why .img_fleche{
+	vertical-align: middle;
+}
+
+#txt_reasons, #innovation_technology_head{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/******************************
+ 	3è bloc : Bloc intérêts 
+*******************************/
+#interests{
+	margin: 20px;
+	padding: 10px;
+	background-color: white;
+}
+
+#interests p{
+	padding-left: 30px;
+}
+
+/***************************
+ 	4è bloc : Bloc Défis 
+****************************/
+#myChallenges{
+	margin: 20px;
+	margin-bottom: 20px;
+	padding: 10px 0px 60px 10px;
+	background-color: white;
+}
+
+#myChallenges p{
+	margin-right: 10px;
+	margin-top: 27px;
+}
+
+/*******************************
+ ***** PAGE CONNAISSANCES ******
+ *******************************/
+
+/**** Polices ****/
+h1{
+	color: #000000;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Cuprum', sans-serif;
+	text-decoration: underline;
+}
+
+.titreConnaissances{
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Cuprum', sans-serif;
+	color: #3333ff;
+}
+
+/**** Pour ajouter de la marge sous le titre h1 ****/
+#titreMesConnaissances{
+	margin-bottom: 60px;
+}
+
+/**** Disposition pour chaque DIV de la page sauf le dernier bloc ****/
+.connaissances{
+	margin: auto;
+	width: 90%;
+	border-bottom: 1px dashed black;
+	padding-bottom: 30px;
+}
+
+/***************************
+  	1er bloc : Front-End 
+ ***************************/
+
+/**** Redimensionner chaque logo ****/
+#html5_logo{
+	width: 12%;
+	margin-left: 50px;
+}
+
+#css3_logo{
+	width: 12%;
+	margin-left: 20px;
+}
+
+#js_logo{
+	width: 12%;
+	margin-left: 20px;
+}
+
+#jquery_logo{
+	width: 12%;
+	margin-left: 20px;
+}
+
+#ajax_logo{
+	width: 12%;
+	margin-left: 20px;
+}
+
+#jason_logo{
+	width: 12%;
+	margin-left: 20px;
+}
+
+/************************
+    2è bloc : Back-End 
+ ************************/
+
+/**** Pour les deux rangées de logos ****/
+#firstRow, #secondRow{
+	display: block;	
+}
+
+#firstRow{
+	margin-bottom: 10px;
+	margin-right: 20px;
+}
+
+#secondRow{
+	margin-bottom: 20px;
+}
+
+/**** 1er rang ****/
+/**** Redimensionner chaque logo ****/
+#php_logo{
+	width: 12%;
+	margin-left: 150px;
+}
+
+#mysql_logo{
+	width: 12%;
+	margin-left: 25px;
+}
+
+#microsoft_sql_server_logo{
+	width: 12%;
+	margin-left: 25px;
+}
+
+#c_logo{
+	width: 12%;
+	margin-left: 25px;
+}
+
+#cpp_logo{
+	width: 12%;
+	margin-left: 25px;
+}
+
+/**** Aligner les logos à la même hauteur ****/
+#php_logo, #mysql_logo, #microsoft_sql_server_logo, #c_logo, #cpp_logo{
+	vertical-align: middle;
+}
+
+/**** 2è rang *****/
+/**** Redimensionner chaque logo ****/
+#cSharp_logo{
+	width: 12%;
+	margin-left: 70px;
+}
+
+#asp_logo{
+	width: 12%;
+	margin-left: 25px;
+}
+
+#java_logo{
+	width: 12%;
+	margin-left: 25px;
+}
+
+#j2ee_logo{
+	width: 12%;
+	margin-left: 25px;
+}
+
+#android_logo{
+	width: 12%;
+	margin-left: 25px;
+}
+
+#jsp_logo{
+	width: 10%;	
+}
+
+/**** Aligner les logos à la même hauteur ****/
+#cSharp_logo, #asp_logo, #java_logo, #j2ee_logo, #android_logo, #jsp_logo{
+	vertical-align: middle;
+}
+
+/************************
+  	  3è bloc : IDE 
+ ************************/
+
+/**** Redimensionner chaque logo ****/
+#aptana_logo{
+	width: 14%;
+	margin-left: 50px;
+}
+
+#vs_logo{
+	width: 14%;
+	margin-left: 20px;
+}
+
+#kepler_logo{
+	width: 14%;
+	margin-left: 20px;
+}
+
+#luna_logo{
+	width: 14%;
+	margin-left: 20px;
+}
+
+#netbeans_logo{
+	width: 14%;
+	margin-left: 20px;
+}
+
+/**** Aligner les logos à la même hauteur ****/
+#aptana_logo, #vs_logo, #kepler_logo, #luna_logo, #netbeans_logo{
+	vertical-align: middle;
+}
+
+/************************
+     4è bloc : SERVEURS 
+*************************/
+
+/**** Redimensionner chaque logo ****/
+#wamp_logo{
+	width: 10%;
+	margin-left: 120px;
+}
+
+#tomcat_logo{
+	width: 20%;
+	margin-left: 25px;
+}
+
+#glassfish_logo{
+	width: 15%;
+	margin-left: 25px;
+}
+
+#iis_logo{
+	width: 18%;
+	margin-left: 25px;
+}
+
+/**** Aligner les logos à la même hauteur ****/
+#wamp_logo, #tomcat_logo, #glassfish_logo, #iis_logo{
+	vertical-align: middle;
+}
+
+/************************
+   5è bloc : FRAMEWORKS 
+*************************/
+
+/**** Redimensionner chaque logo ****/
+#jsf_logo{
+	width: 18%;
+	margin-left: 90px;
+}
+
+#spring_framework_logo{
+	width: 18%;
+	margin-left: 25px;
+}
+
+#mybatis_logo{
+	width: 18%;
+	margin-left: 25px;
+}
+
+#boostrap_logo{
+	width: 15%;
+	margin-left: 25px;
+}
+
+/**** Aligner les logos à la même hauteur ****/
+#jsf_logo, #spring_framework_logo, #mybatis_logo, #boostrap_logo{
+	vertical-align: middle;
+}
+
+/************************
+   6è bloc : LOGICIELS 
+*************************/
+
+/**** Redimensionner chaque logo ****/
+#msaccess_logo{
+	width: 15%;
+	margin-left: 90px;
+}
+
+#msqls_logo{
+	width: 15%;
+	margin-left: 25px;
+}
+
+#workbench_logo{
+	width: 10%;
+	margin-left: 25px;
+}
+
+#photoshop_logo{
+	width: 11%;
+	margin-left: 25px;
+}
+
+#phpmyadmin_logo{
+	width: 15%;
+	margin-left: 25px;
+}
+
+/**** Aligner les logos à la même hauteur ****/
+#msaccess_logo, #msqls_logo, #workbench_logo, #photoshop_logo, #phpmyadmin_logo{
+	vertical-align: middle;
+}
+
+/************************
+      7è bloc : SEO 
+ ************************/
+
+/**** Redimensionner chaque logo ****/
+#adwords_logo{
+	width: 15%;
+	margin-left: 50px;
+}
+
+#adsense_logo{
+	width: 15%;
+	margin-left: 25px;
+}
+
+#trends_logo{
+	width: 15%;
+	margin-left: 25px;
+}
+
+#analytics_logo{
+	width: 15%;
+	margin-left: 25px;
+}
+
+#mastertools_logo{
+	width: 15%;
+	margin-left: 25px;
+	padding-bottom: 10px;
+}
+
+/**** Aligner les logos à la même hauteur ****/
+#adwords_logo, #adsense_logo, #trends_logo, #analytics_logo, #mastertools_logo{
+	vertical-align: middle;
+}
+
+/**************************************************
+   Dernier bloc : REPOSITORY + BUREAUTIQUE + OS 
+***************************************************/
+#autres{
+	margin: auto;
+	width: 90%;
+	padding-bottom: 30px;
+	padding-top: 15px;
+}
+
+#dernier_bloc, h2{
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/**** Aligner les 3 blocs du bas ****/
+#repository, #bureautique, #os{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/**** Arrnager les 3 blocs du bas ****/
+#repository{
+	border-right: 1px dashed black;
+	width: 30%;
+}
+
+#bureautique{
+	width: 30%;
+	padding-left: 10px;
+}
+
+#os{
+	width: 30%;
+	border-left: 1px dashed black;	
+}
+
+/**** Redimensionner chaque logo ****/
+#github_logo{
+	width: 30%;
+	margin-left: 22px;
+}
+
+#svn_logo{
+	width: 30%;
+}
+
+#mo-logo{
+	width: 85%;
+	margin-left: 22px;
+}
+
+#windows_logo{
+	width: 30%;
+	padding-left: 40px;
+}
+
+#mac_logo{
+	width: 30%;
+}
+
+/**** Aligner tous les logos à la même hauteur ****/
+#github_logo, #svn_logo{
+	vertical-align: top;
+}
+
+/*******************************
+ ******* PAGE FORMULAIRE *******
+ *******************************/
+
+/**** Texte avant formulaire ****/
+#texteContact{
+	width: 70%;
+	margin: auto;
+	padding-left: 80px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: white;
+}
+
+#texteContact, #infosContactLinkedIn, p{
+	font-family: 'Archivo Narrow', sans-serif;
+}
+
+/**** Formulaire ****/
+#formulaire{
+	width: 70%;
+	margin: 0 auto;
+	height: 600px;
+	margin-top: 50px;
+}
+
+/**** Contenu du formulaire ****/
+#formulaire, label, input, textarea{
+	display: block;
+	margin: 0 auto;
+}
+
+#formulaire input{
+	margin-bottom: 15px;
+	height: 25px;
+	border-radius: 3px;
+	box-shadow: 2px 2px 15px 4px #888888;
+}
+
+.infosContact{
+	text-align: center;
+}
+
+label{
+	margin-top: 20px;
+	font-family: 'Fjalla One', sans-serif;
+	text-align: center;
+}
+
+textarea{
+	border-radius: 2px;
+	margin: auto;
+	box-shadow: 2px 2px 15px 4px #888888;
+}
+
+/**** Personnaliser les messages d'erreur ****/
+.error {
+   color: red;
+   font-size: 12px;
+}
+
+.error:focus {
+   background-color: #ff4d4d;
+   border: 5px solid red;
+   color: white;
+}
+
+/**** Personnaliser le bouton d'envoi ****/
+#sendBtn{
+	padding: 8px 10px 20px 15px;
+	background-color: #66a3ff;
+	font-family: 'Signika', sans-serif;
+	box-shadow: 2px 2px 2px #888888;
+}
+
+/**** Bloc de confirmation d'envoi ****/
+#messageRemerciement{
+	margin-top: 220px;
+}
+
+#messageRemerciement p{
+	color: blue;
+	margin-left: 180px;
+	font-family: 'Lobster', cursive;
+	font-size: 20px; 
+}
+
+/*******************************
+ ******** MEDIA QUERIES ********
+ *******************************/
+
+/* ----------------
+   	 Petits écrans
+   ----------------*/
+@media screen and (max-width: 480px) {	
+	
+	/**** Langues ****/
+	#languages {
+		position: absolute;
+		right: 5px;
+		top: 15px;
+	}
+
+	#languages img {
+		margin: 2px;
+		width: 20px;
+	}
+	
+	/**** Ancre ****/
+	.cd-top {
+		width: 30px;
+		height: 30px;
+		bottom: 30px;
+		right: 10px;
+  	}
+  	
+  	/******** Liens du menu ********/
+	.menuDiv{
+		text-align: center;
+	}	
+	
+	.menuDiv ul li{
+		list-style: none;
+		margin-bottom: 19px;
+	}
+
+	.menuDiv ul li a{
+		font-family: 'Cuprum', sans-serif;
+		font-size: 12px;
+		text-decoration: none;
+		color: white;
+	    background-color: #0000CC;
+	    text-transform: uppercase;
+	    padding: 6px;	
+	    border: 3px solid black;	
+	}
+	
+	.menuDiv ul li a:hover{
+		background-color: white;
+		color: black;		
+	}
+	
+	.titreAccueil{
+		font-size: 11px;
+	}
+	
+	/******** 1er bloc page accueil ********/
+	#aboutMe{
+		margin: 10px;
+		padding: 10px;
+		background-color: white;
+	}
+	
+	#ma_photo{
+		display: block;
+		width: 25%;
+		margin: 0 auto;
+		margin-bottom: 5px;
+		border-radius: 15px;
+	}
+	
+	#aboutMe p{
+		font-size: 10px;
+		
+	}
+
+	#question_mark{
+		width: 9%;
+	}	
+	
+	h6{
+		font-size: 10px;
+		margin-top: 5px;
+	}
+	
+	/******** 2è bloc page accueil ********/
+	#why{
+		margin: 10px;
+		padding: 10px;
+	}
+	
+	#pour{
+		font-size: 12px;
+		margin-left: 7px;
+		margin-top: 5px;
+	}
+	
+	#txt_reasons p{
+		font-size: 10px;
+	}
+	
+	.img_fleche{
+		width: 10px;
+		padding-left: 10px;
+	}
+	
+	#innovation_technology_head{
+		width: 0;
+	}
+	
+	/******** vidéos ********/
+	#videoIntro{
+		display: block;
+		margin: 0 auto;
+		width: 92%;		
+	}
+	
+	#videoMinuteOfCode{
+		display: block;
+		margin: 0 auto;
+		width: 92%;
+	}
+	
+	/******** 3è bloc page accueil ********/
+	#interests{
+		margin: 10px;
+		padding: 5px;
+	}
+	
+	#interests p{
+		font-size: 10px;
+		margin-left: -25px;
+	}
+	
+	/******** 4è bloc page accueil ********/
+	#myChallenges{
+		margin: 10px;
+		padding: 5px;
+	}
+	
+	#image_challenge{
+		width: 50%;
+		margin-left: 60px;
+	}
+	
+	#myChallenges ul li{
+		list-style: none;
+		font-size: 10px;
+		line-height: 130%;
+		margin-bottom: 10px;
+		margin-left: -25px;
+	}
+	
+	/******** page connaissances ********/
+	
+	/**** titres ****/
+  	.mainDiv #titreMesConnaissances{
+  		font-size: 10px;
+  		margin-bottom: 20px;
+  	}
+  	
+  	.connaissances h2{
+  		font-size: 10px;
+  	}
+  	
+  	#autres h2{
+  		font-size: 10px;
+  	}
+  	
+	#titreMesConnaissances{
+		font-size: 16px;
+	}
+	
+	.titreConnaissances{
+		font-size: 14px;
+	}
+	
+	/***** logos ******/
+	#html5_logo{
+		margin-left: 5px;
+	}
+	
+	#css3_logo{
+		margin-left: 5px;
+	}
+	
+	#js_logo{
+		margin-left: 5px;
+	}
+	
+	#jquery_logo{
+		margin-left: 5px;
+	}
+	
+	#ajax_logo{
+		margin-left: 5px;
+	}
+	
+	#jason_logo{
+		margin-left: 5px;
+	}
+	
+	/***********/	
+	#php_logo{
+		margin-left: 20px;
+	}
+	
+	#mysql_logo{
+		margin-left: 15px;
+	}
+	
+	#c_logo{
+		margin-left: 15px;
+	}
+	
+	#cpp_logo{
+		margin-left: 15px;
+	}
+	
+	#cSharp_logo{
+		margin-left: 10px;
+	}
+	
+	#asp_logo{
+		margin-left: 5px;
+	}
+	
+	#java_logo{
+		margin-left: 5px;
+	}
+	
+	#j2ee_logo{
+		margin-left: 5px;
+	}
+	
+	#android_logo{
+		margin-left: 5px;
+	}
+	
+	/***********/
+	#aptana_logo{
+		margin-left: 10px;
+	}
+	
+	#vs_logo{
+		margin-left: 5px;
+	}
+	
+	#kepler_logo{
+		margin-left: 5px;
+	}
+	
+	#luna_logo{
+		margin-left: 5px;
+	}
+	
+	#netbeans_logo{
+		margin-left: 5px;
+		width: 8%;
+	}
+	
+	/***********/
+	#wamp_logo{
+		margin-left: 10px;
+	}
+	
+	#tomcat_logo{
+		margin-left: 5px;
+	}
+	
+	#glassfish_logo{
+		margin-left: 5px;
+	}
+	
+	#iis_logo{
+		margin-left: 5px;
+	}
+	
+	/***********/
+	#jsf_logo{
+		margin-left: 2px;
+	}
+	
+	#spring_framework_logo{
+		margin-left: 5px;
+	}
+	
+	#mybatis_logo{
+		margin-left: 5px;
+	}
+	
+	#boostrap_logo{
+		margin-left: 5px;
+	}
+	
+	/***********/
+	#msaccess_logo{
+		margin-left: 20px;
+	}
+	
+	#msqls_logo{
+		margin-left: 5px;
+	}
+	
+	#workbench_logo{
+		margin-left: 5px;
+	}
+	
+	#photoshop_logo{
+		margin-left: 5px;
+	}
+	
+	#phpmyadmin_logo{
+		margin-left: 5px;
+	}
+	
+	/***********/
+	#adwords_logo{
+		margin-left: 5px;
+	}
+	
+	#adsense_logo{
+		margin-left: 5px;
+	}
+	
+	#trends_logo{
+		margin-left: 15px;
+	}
+	
+	#analytics_logo{
+		margin-left: 5px;
+	}
+	
+	#mastertools_logo{
+		margin-left: 5px;
+	}
+	
+	/***********/
+	#github_logo{
+		margin-left: 1px;
+	}
+	
+	#mo-logo{
+		margin-left: 1px;
+		width: 45%;
+	}
+	
+	#windows_logo{
+		margin-left: -25px;
+	}
+	
+	#repository .titreConnaissances{
+		margin-left: -10px;
+	}
+	
+	#bureautique .titreConnaissances{
+		margin-left: -20px;
+	}
+	
+	/******** page formulaire ********/
+	#texteContact{
+		width: 60%;
+		height: 160px;
+	}
+	
+	#btnLinkedIn{
+		width: 90%;
+		margin: 0 auto;
+	}
+	
+	#texteContact p{
+		font-size: 10px;
+		margin-left: -80px;
+	}	
+	
+	#formulaire{
+		margin-top: 50px;
+	}
+	
+	label{
+		font-size: 11px;
+	}
+	
+	#name{
+		width: 180px;
+	}
+	
+	#email{
+		width: 180px;
+	}
+	
+	#object{
+		width: 180px;
+	}
+	
+	#message{
+		width: 180px;
+	}
+	
+	#image_smiley{
+		width: 35%;
+		margin-left: 60px;
+	}
+	
+	#messageRemerciement p{
+		font-size: 12px;
+		margin-left: 30px;
+	}
+	
+}
+
+/* ---------------------------------------
+   	 Portrait & format paysage téléphone 
+   --------------------------------------- */
+@media screen and (min-width: 480px) {	
+
+	/******** Ancre ********/
+	.cd-top {
+		width: 40px;
+		height: 40px;
+		bottom: 30px;
+		right: 20px;
+  	}
+	
+	/******** Liens du menu ********/
+	.menuDiv{
+		text-align: center;	
+	}	
+
+	.menuDiv ul li {
+		font-family: 'Cuprum', sans-serif;	
+		font-size: 13px;	
+		margin-bottom: 26px;
+	}
+	
+	.menuDiv ul li a{
+		text-decoration: none;
+		color: white;
+		background-color: #0000CC;
+	    text-transform: uppercase;
+	    padding: 8px;
+	    border: 3px solid black;
+	}
+	
+	.menuDiv ul li{
+		list-style: none;
+	}
+	
+	.menuDiv ul li a:hover{
+		background-color: white;
+		color: black;
+		text-decoration: none;
+	}
+	
+	/******** 1er bloc page accueil ********/
+	#aboutMe{
+		margin: 20px;
+		padding: 20px;
+		background-color: white;
+	}
+	
+	#titreMesConnaissances{
+		font-size: 20px;
+	}
+	
+	h2{
+		font-size: 13px;
+	}
+	
+	h6{
+		font-size: 12px;
+	}
+	
+	#ma_photo{
+		width: 38%;
+		display: block;
+		margin: 0 auto;
+		border-radius: 20px;
+		margin-bottom: 10px;
+		margin-top: -15px;
+	}
+	
+	#aboutMe p{
+		font-size: 10px;
+	}
+	
+	#question_mark{
+		width: 7%;
+	}
+	
+	/******** 2è bloc page accueil ********/
+	#pour{
+		margin-left: 10px;
+	}
+	
+	#txt_reasons p{
+		font-size: 10px;
+	}
+	
+	.img_fleche{
+		width: 10px;
+		padding-left: 10px;
+	}
+	
+	#innovation_technology_head{
+		width: 0;
+	}
+	
+	/******** vidéos ********/
+	#videoIntro{
+		display: block;
+		margin: 0 auto;
+		width: 91%;
+		height: 220px;
+	}
+	
+	#videoMinuteOfCode{
+		display: block;
+		margin: 0 auto;
+		width: 91%;
+		height: 220px;
+	}
+	
+	/******** 3è bloc page accueil ********/
+	#interests p{
+		margin-left: -18px;
+		font-size: 10px;
+	}
+	
+	/******** 4è bloc page accueil ********/
+	#image_challenge{
+		width: 35%;
+		margin-left: 100px;
+		margin-top: 20px;
+	}
+
+	#myChallenges ul li{
+		list-style: none;
+	}
+	
+	.objectifs{
+		margin-left: -18px;
+		font-size: 13px;
+	}
+	
+	/******** page connaissances ********/
+	
+	/**** titres ****/
+  	.mainDiv #titreMesConnaissances{
+  		font-size: 15px;
+  		margin-bottom: 30px;
+  	}
+	
+	#html5_logo{
+		width: 8%;
+		margin-left: 4px;
+	}
+	
+	#css3_logo{
+		width: 8%;
+	}
+	
+	#js_logo{
+		width: 8%;
+	}
+	
+	#jquery_logo{
+		width: 8%;
+	}
+	
+	#ajax_logo{
+		width: 9%;
+	}
+	
+	#jason_logo{
+		width: 8%;
+	}
+	
+	/************/
+	#php_logo{
+		width: 12%;
+		margin-left: 50px;
+	}
+	
+	#cSharp_logo{
+		margin-left: 15px;
+	}
+	
+	#asp_logo{
+		margin-left: 5px;
+	}
+	
+	#java_logo{
+		margin-left: 5px;
+	}
+	
+	#j2ee_logo{
+		margin-left: 5px;
+	}
+	
+	#android_logo{
+		margin-left: 5px;
+	}
+	
+	#jsp_logo{
+		margin-left: 5px;
+	}
+	
+	/************/
+	#aptana_logo{
+		margin-left: 25px;
+	}
+	
+	#vs_logo{
+		width: 9%;
+	}
+	
+	#kepler_logo{
+		width: 9%;
+	}
+	
+	#luna_logo{
+		width: 9%;
+	}
+	
+	#netbeans_logo{
+		width: 9%;
+	}
+	
+	/************/
+	#wamp_logo{
+		width: 9%;
+		margin-left: 50px;
+	}
+	
+	#tomcat_logo{
+		width: 9%;
+	}
+	
+	#glassfish_logo{
+		width: 9%;
+	}
+	
+	#iis_logo{
+		width: 9%;
+	}
+	
+	/************/
+	#jsf_logo{
+		width: 9%;
+		margin-left: 50px;
+	}
+	
+	#spring_framework_logo{
+		width: 9%;
+	}
+	
+	#mybatis_logo{
+		width: 9%;
+	}
+	
+	#boostrap_logo{
+		width: 9%;
+	}
+	
+	/************/
+	#msaccess_logo{
+		width: 9%;
+		margin-left: 30px;
+	}
+	
+	#msqls_logo{
+		width: 9%;
+	}
+	
+	#workbench_logo{
+		width: 9%;
+	}
+	
+	#photoshop_logo{
+		width: 9%;
+	}
+	
+	#phpmyadmin_logo{
+		width: 15%;
+		
+	}
+	
+	/************/
+	#adwords_logo{
+		width: 9%;
+		margin-left: 40px;
+	}
+	
+	#adsense_logo{
+		width: 9%;
+	}
+	
+	#trends_logo{
+		width: 9%;
+	}
+	
+	#analytics_logo{
+		width: 9%;
+	}
+	
+	#mastertools_logo{
+		width: 9%;
+	}
+	
+	/************/
+	#mo-logo{
+		width: 50%;
+	}
+	
+	#windows_logo{
+		margin-left: -20px;
+	}
+	
+	/******** page formulaire ********/
+	#texteContact{
+		width: 50%;
+		height: 190px;
+	}
+	
+	#btnLinkedIn{
+		width: 70%;
+		margin: 0 auto;
+	}
+	
+	#texteContact p{
+		font-size: 11px;
+		margin-left: -70px;
+	}
+	
+	#formulaire{
+		margin-top: 50px;
+	}
+	
+	label{
+		font-size: 14px;
+	}
+	
+	#name{
+		width: 250px;
+	}
+	
+	#email{
+		width: 250px;
+	}
+	
+	#object{
+		width: 250px;
+	}
+	
+	#message{
+		width: 250px;
+	}
+	
+	#image_smiley{
+		width: 35%;
+		margin-left: 80px;
+	}
+	
+	#messageRemerciement p{
+		font-size: 15px;
+		margin-left: 35px;
+	}
+
+}
+
+/* ----------------------------------------------------------
+  	 Téléphone orienté paysage à tablette orientée portrait
+   ---------------------------------------------------------- */
+@media screen and (min-width: 768px) {
+
+	/******** Ancre ********/
+	.cd-top {
+		width: 50px;
+		height: 50px;
+		bottom: 50px;
+  		right: 20px;
+  	}
+  	
+  	/******** Liens du menu ********/
+  	.menuDiv{
+  		margin-top: 30px;
+  		margin-bottom: 40px;
+  	}
+  	
+	.menuDiv ul li a{
+		font-family: 'Cuprum', sans-serif;
+		text-decoration: none;
+		padding: 10px;
+		margin: 5px;
+		font-size: 14px;
+		font-weight: bold;
+	    color: white;
+	    background-color: #0000CC;
+	    text-transform: uppercase;
+	    border: 3px solid black;
+	}
+	
+	.menuDiv ul li{
+		list-style: none;
+		display: inline;
+	}
+	
+	.menuDiv ul li a:hover{
+		background-color: white;
+		color: black;
+	}
+	
+	/******** 1er bloc page accueil ********/
+	h6{
+		font-size: 20px;
+		color: #0000FF;
+	}
+	
+	h2{
+		font-size: 17px;
+	}
+	
+	#aboutMe{
+		background-color: white;
+		height: 250px;
+		margin: 20px;
+		padding: 20px;
+	}
+	
+	#ma_photo{
+		width: 160px;
+		height: 210px;
+		float: left;
+		margin-top: 14px;
+		margin-left: -10px;
+		margin-right: 7px;
+		border: 5px solid #527A7A;
+		border-radius: 5px;
+	}
+	
+	#aboutMe p{
+		font-size: 12px;
+	}
+	
+	/******** 2e bloc page accueil ********/
+	#txt_reasons p{
+		font-size: 10px;
+		margin-left: 15px;
+	}
+	
+	.img_fleche{
+		width: 15px;
+		padding-left: 10px;
+	}
+	
+	#innovation_technology_head{
+		width: 0;
+	}
+	
+	/******** vidéos ********/
+	#videoIntro{
+		display: block;
+		margin: 0 auto;
+		width: 94%;
+		height: 280px;
+	}
+	
+	#videoMinuteOfCode{
+		display: block;
+		margin: 0 auto;
+		width: 94%;
+		height: 280px;
+		margin-bottom: 20px;
+	}
+	
+	/******** 3e bloc page accueil ********/
+	#interests p{
+		font-size: 12px;
+	}
+	
+	/******** dernier bloc page accueil ********/
+	#image_challenge{
+		width: 22%;
+		float: left;
+		margin-left: 15px;
+		margin-right: 20px;
+	}
+	
+	#pour{
+		margin-left: 25px;
+	}
+
+	#myChallenges ul li{
+		list-style: none;
+	}
+	
+	#image_challenge{
+		margin-top: -17px;
+	}
+	
+	#myChallenges p{
+		font-size: 12px;
+		font-style: bold;
+	}
+	
+	#myChallenges h2{
+		margin-bottom: 20px;
+	}
+	
+	.objectifs{
+		margin-top: 5px;
+		font-size: 13px;
+		padding-right: 5px;
+	}
+	
+	/******** page connaissances ********/
+	
+	/**** titres ****/
+	#titreMesConnaissances{
+		font-size: 25px;
+	}
+	
+  	.mainDiv #titreMesConnaissances{
+  		font-size: 20px;
+  		margin-bottom: 50px;
+  	}
+	
+	/**** logos ****/
+	#html5_logo{
+		width: 10%;
+		margin-left: 50px;
+	}
+
+	#css3_logo{
+		width: 10%;
+		margin-left: 20px;
+	}
+	
+	#js_logo{
+		width: 10%;
+		margin-left: 20px;
+	}
+	
+	#jquery_logo{
+		width: 10%;
+		margin-left: 20px;
+	}
+	
+	#ajax_logo{
+		width: 10%;
+		margin-left: 20px;
+	}
+	
+	#jason_logo{
+		width: 10%;
+		margin-left: 20px;
+	}
+	
+	/*****************/
+	#php_logo{
+		width: 12%;
+		margin-left: 70px;
+	}
+	
+	#cSharp_logo{
+		width: 12%;
+		margin-left: 50px;
+	}
+	
+	/*****************/
+	#aptana_logo{
+		width: 14%;
+		margin-left: 80px;
+	}
+	
+	#wamp_logo{
+		width: 10%;
+		margin-left: 120px;
+	}	
+
+	#jsf_logo{
+		width: 18%;
+		margin-left: 80px;
+	}
+	
+	/*****************/
+	#msaccess_logo{
+		width: 15%;
+		margin-left: 60px;
+	}
+	
+	/*****************/
+	#adwords_logo{
+		width: 15%;
+		margin-left: 60px;
+	}
+	
+	/******** page formulaire ********/
+	#texteContact{
+		width: 50%;
+		height: 180px;
+	}
+	
+	#btnLinkedIn{
+		width: 35%;
+		margin: 0 auto;
+	}
+	
+	#texteContact p{
+		font-size: 13px;
+		margin-left: -50px;
+	}
+	
+	#formulaire{
+		margin-top: 50px;
+	}
+	
+	label{
+		font-size: 14px;
+	}
+	
+	#name{
+		width: 280px;
+	}
+	
+	#email{
+		width: 280px;
+	}
+	
+	#object{
+		width: 280px;
+	}
+	
+	#message{
+		width: 280px;
+	}
+	
+	#image_smiley{
+		width: 30%;
+		margin-left: 150px;
+	}
+	
+	#messageRemerciement p{
+		font-size: 16px;
+		margin-left: 130px;
+	}
+}
+
+/* -----------------
+ 	 Écrans moyens 
+   ----------------- */
+
+@media screen and (min-width: 1024px) {
+
+	h2{
+		font-size: 22px;
+	}	
+  	
+	/**** Ancre ****/
+	.cd-top {
+		width: 50px;
+		height: 50px;
+		bottom: 30px;
+		right: 30px;
+  	}
+
+	/******** Liens du menu ********/
+	.menuDiv{
+		text-align: center;
+		margin: auto;
+		margin-top: 40px;
+		margin-bottom: 50px;
+	}	
+
+	.menuDiv ul li a{
+		font-family: 'Cuprum', sans-serif;
+		text-decoration: none;
+		padding: 10px;		
+		font-size: 18px;
+		font-weight: bold;
+	    color: white;
+	    background-color: #0000CC;
+	    text-transform: uppercase;
+	    border: 3px solid black;
+	}
+	
+	.menuDiv ul li{
+		list-style: none;
+		display: inline;
+	}
+	 
+	.menuDiv ul li a:hover{
+		background-color: white;
+		color: black;
+	}
+	
+	/******** 1er bloc page accueil ********/
+	#aboutMe{
+		margin: 20px;
+		padding: 20px;
+		background-color: white;
+		height: 240px;
+	}
+	
+	#ma_photo{
+		width: 160px;
+		height: 210px;
+		float: left;
+		margin-right: 10px;
+		margin-top: 10px;
+		border: 5px solid #527A7A;
+		border-radius: 5px;
+	}
+	
+	#aboutMe p{
+		margin-top: 5px;
+		font-size: 14px;
+	}
+	
+	#question_mark{
+		width: 5%;
+	}
+	
+	/******** 2è bloc page accueil ********/
+	#txt_reasons p{
+		font-size: 11px;
+		margin-left: 15px;
+	}
+	
+	#innovation_technology_head{
+		width: 20%;
+		margin-top: 50px;
+		margin-left: 70px;
+	}
+	
+	/******** vidéos ********/
+	#video{
+		background-color: white;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		margin-left: 20px; 
+		margin-right: 20px; 
+	}
+	
+	#videoIntro{
+		display: block;
+		margin: 0 auto;
+		width: 460px;
+		height: 265px;
+	}
+	
+	#videoMinuteOfCode{
+		display: block;
+		margin: 0 auto;
+		width: 460px;
+		height: 265px;
+	}
+	
+	/******** Dernier bloc page accueil ********/
+	#image_challenge{
+		width: 22%;
+		float: left;
+		margin-left: 50px;
+		margin-right: 40px;
+	}	
+
+	.objectifs{
+		list-style: none;
+		font-size: 15px;
+		font-family: 'Archivo Narrow', sans-serif;
+		line-height: 150%;	
+	}		
+	
+	/******** page connaissances ********/
+	#titreMesConnaissances{
+		font-size: 32px;
+	}
+	
+	/**** titres ****/
+  	.mainDiv #titreMesConnaissances{
+  		font-size: 27px;
+  		margin-bottom: 50px;
+  	}
+	
+	/******** logos *********/
+	#html5_logo{
+		margin-left: 70px;
+	}
+	
+	/*****************/
+	#php_logo{
+		margin-left: 120px;
+	}
+	
+	/*****************/
+	#aptana_logo{
+		margin-left: 100px;
+	}
+	
+	/*****************/
+	#wamp_logo{
+		margin-left: 160px;
+	}
+	
+	/*****************/
+	#jsf_logo{
+		margin-left: 140px;
+	}
+	
+	/*****************/
+	#msaccess_logo{
+		margin-left: 90px;
+	}
+	
+	/*****************/
+	#adwords_logo{
+		margin-left: 90px;
+	}
+	
+	/*****************/
+	#mastertools_logo{
+		width: 12%;
+		margin-left: 25px;
+		padding-bottom: 10px;
+	}
+	
+	/*****************/
+	#windows_logo{
+		margin-left: 5px;
+	}
+	
+	/******** page formulaire ********/
+	#texteContact{
+		width: 50%;
+		height: 190px;
+	}
+	
+	#btnLinkedIn{
+		width: 35%;
+		margin: 0 auto;
+	}
+	
+	#texteContact p{
+		font-size: 13px;
+		margin-left: -80px;
+	}
+	
+	#formulaire{
+		margin-top: 60px;
+	}
+	
+	label{
+		font-size: 16px;
+	}
+	
+	#name{
+		width: 290px;
+	}
+	
+	#email{
+		width: 290px;
+	}
+	
+	#object{
+		width: 290px;
+	}
+	
+	#message{
+		width: 290px;
+	}
+	
+	#messageRemerciement p{
+		color: blue;
+	}
+	
+	#image_smiley{
+		width: 30%;
+		margin-left: 160px;
+	}
+	
+	#messageRemerciement p{
+		font-size: 20px;
+		margin-left: 130px;
+	}
+	
+}
+
+/* ----------------
+     Écrans larges 
+   ----------------  */
+@media screen and (min-width: 1200px) {
+	
+	/******** Liens du menu ********/
+	.menuDiv{
+		margin-bottom: 50px;
+	}
+	
+	.menuDiv ul li a{
+		font-family: 'Cuprum', sans-serif;
+		text-decoration: none;
+		padding: 10px;
+		font-size: 20px;
+		font-weight: bold;
+	    color: white;
+	    background-color: #0000CC;
+	    text-transform: uppercase;
+	    border: 3px solid black;
+	}
+	
+	.menuDiv ul li{
+		list-style: none;
+		display: inline;
+	}
+	
+	.menuDiv ul li a:hover{
+		background-color: white;
+		color: black;	
+	}	
+	
+	/******** 1er bloc page accueil ********/
+	#aboutMe{
+		margin: 20px;
+		padding: 20px;
+		background-color: white;
+		height: 270px;
+	}
+	
+	#who{
+		font-size: 23px;
+	}
+	
+	#question_mark{
+		width: 5%;
+	}
+	
+	#aboutMe p{
+		margin-top: 6px;
+		font-size: 16px;
+	}
+	
+	#ma_photo{
+		width: 190px;
+		height: 250px;
+		margin-top: 5px;
+		margin-left: -9px;
+	}
+	
+	/******** 2è bloc page accueil ********/
+	#txt_reasons p{
+		font-size: 14px;
+	}
+	
+	#innovation_technology_head{
+		width: 21%;
+		margin-top: 20px;
+		margin-left: 100px;
+	}
+	
+	/******** vidéos ********/
+	#videoIntro{
+		display: block;
+		margin: 0 auto;
+		width: 560px;
+		height: 315px;
+		margin-bottom: 40px;
+	}
+	
+	#videoMinuteOfCode{
+		display: block;
+		margin: 0 auto;
+		width: 560px;
+		height: 315px;
+		margin-bottom: 20px;
+	}
+	
+	/******** 3è bloc page accueil ********/
+	#interests p{
+		font-size: 17px;
+	}
+	
+	/******** Dernier bloc page accueil ********/
+	#myChallenges{
+		height: 200px;
+	}
+	
+	#image_challenge{
+		width: 220px;
+		float: left;
+		margin-left: 30px;
+		margin-right: 40px;
+	}
+
+	.objectifs{
+		list-style: none;
+		font-size: 18px;
+		font-family: 'Archivo Narrow', sans-serif;
+		line-height: 150%;	
+	}
+	
+	/******** page connaissances ********/
+	
+	/**** titres ****/
+  	.mainDiv #titreMesConnaissances{
+  		font-size: 32px;
+  		margin-bottom: 50px;
+  	}
+	
+	/******** page formulaire ********/
+	#btnLinkedIn{
+		width: 25%;
+		margin: 0 auto;
+	}
+	
+	#texteContact{
+		height: 230px;
+	}
+	
+	#texteContact p{
+		font-size: 17px;
+		margin-left: -70px;
+	}
+	
+	#formulaire{
+		margin-top: 80px;
+	}
+	
+	label{
+		font-size: 14px;
+	}
+	
+	#name{
+		width: 350px;
+	}
+	
+	#email{
+		width: 350px;
+	}
+	
+	#object{
+		width: 350px;
+	}
+	
+	#message{
+		width: 350px;
+	}
+	
+	#image_smiley{
+		width: 28%;
+		margin-left: 220px;
+	}
+	
+	#messageRemerciement p{
+		font-size: 22px;
+		margin-left: 220px;
+	}
+	
+}
