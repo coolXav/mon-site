@@ -111,8 +111,7 @@ $page = 'contact';
 				</div>
 				<p class="infosContact"><?php echo $lang['TEXT_GITHUB_1']; ?> <a href="https://github.com/coolXav/mon-site.git" target="_blank"><?php echo $lang['TEXT_GITHUB_TXT_LIEN'];  ?> </a> <?php echo $lang['TEXT_GITHUB_2']; ?> <br />
 					<?php echo $lang['MY_GITHUB_LINK_2']; ?>
-				</p>
-				<!-- <p class="infosContact"><?php echo $lang['TEXT_GITHUB_1']; ?><a href="https://github.com/coolXav/website.git" target="_blank">code </a><?php echo $lang['TEXT_GITHUB_2']; ?></p>				 -->
+				</p>				
 			</div>
 			<form id="formulaire" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" >
 				<label><?php echo $lang['INPUT_NAME']; ?></label>
