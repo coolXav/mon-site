@@ -134,8 +134,10 @@ $page = 'contact';
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>			
 		<!-- jQuery Validation Plugin-->		
 		<script type="text/javascript" src="js/jquery.validate.js"></script>
+		<!-- anglais -->
 		<script type="text/javascript" src="js/validatemsg_en.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
+		<!-- français -->
 		<?php if ( isset( $_GET['lang'] ) && 'fr' === $_GET['lang'] ) : ?>
 		<script type="text/javascript" src="js/validatemsg_fr.js"></script>	
 		<?php endif; ?>
