@@ -18,9 +18,9 @@ $page = 'index';
 
 		<?php include 'includes/navigation_menu.php'; ?>						
 
-		<div id="languages">
-		<a href="index.php?lang=en"><img src="images/pays/eng.png" /></a>
-		<a href="index.php?lang=fr"><img src="images/pays/fr.png" /></a>
+		<div class="languages">
+			<a href="index.php?lang=en"><img src="images/pays/eng.png" alt="image langue"/></a>
+			<a href="index.php?lang=fr"><img src="images/pays/fr.png" alt="image langue"/></a>
 		</div>
 		
 		<div class="mainDiv">	
