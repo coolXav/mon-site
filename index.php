@@ -93,9 +93,9 @@ $page = 'index';
 			</div>			
 			<div id="video">
 				<h2 class="titreAccueil"><?php echo $lang['HEADER_VIDEO_1']; ?></h2>
-				<iframe id="videoIntro" src="https://www.youtube.com/embed/OWsyrnOBsJs" frameborder="0" allowfullscreen></iframe>
+				<iframe id="videoIntro" src="https://www.youtube.com/embed/OWsyrnOBsJs" allowfullscreen></iframe>
 				<h2 class="titreAccueil"><?php echo $lang['HEADER_VIDEO_2']; ?> <?php echo $lang['TXT_VIDEO']; ?></h2>
-				<iframe id="videoMinuteOfCode" src="https://www.youtube.com/embed/2DxWIxec6yo" frameborder="0" allowfullscreen></iframe>
+				<iframe id="videoMinuteOfCode" src="https://www.youtube.com/embed/2DxWIxec6yo" allowfullscreen></iframe>
 			</div>
 			<a href="#" class="cd-top"></a>
 		</div>

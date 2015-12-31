@@ -24,6 +24,11 @@ p{
 	width: 30px;
 }
 
+/**** For HTML5 validation markup of videos ****/
+iframe{
+	border: 0px;
+}
+
 /**** Active link ****/
 .menuDiv ul li a.active{
 		background-color: #254c74;
@@ -641,14 +646,18 @@ textarea{
 
 @media screen and (max-width: 480px) {	
 	
+	.mainDiv{
+		width: 90%;
+	}
+	
 	/**** Languages ****/
-	#languages {
+	.languages {
 		position: absolute;
 		right: 5px;
 		top: 15px;
 	}
 
-	#languages img {
+	.languages img {
 		margin: 2px;
 		width: 20px;
 	}
@@ -657,8 +666,7 @@ textarea{
 	.cd-top {
 		width: 30px;
 		height: 30px;
-		bottom: 30px;
-		right: 10px;
+		bottom: 50%;
   	}
   	
   	/******** Menu links ********/
@@ -668,12 +676,12 @@ textarea{
 	
 	.menuDiv ul li{
 		list-style: none;
-		margin-bottom: 19px;
+		margin-bottom: 12px;
 	}
 
 	.menuDiv ul li a{
 		font-family: 'Cuprum', sans-serif;
-		font-size: 12px;
+		font-size: 8px;
 		text-decoration: none;
 		color: white;
 	    background-color: #0000CC;
@@ -745,19 +753,6 @@ textarea{
 		width: 0;
 	}
 	
-	/******** Vidéos ********/
-	#videoIntro{
-		display: block;
-		margin: 0 auto;
-		width: 92%;		
-	}
-	
-	#videoMinuteOfCode{
-		display: block;
-		margin: 0 auto;
-		width: 92%;
-	}
-	
 	/******** 3rd block ********/
 	#interests{
 		margin: 10px;
@@ -776,8 +771,9 @@ textarea{
 	}
 	
 	#image_challenge{
-		width: 50%;
-		margin-left: 60px;
+		width: 30%;
+		display: block;
+		margin: 0 auto; 
 	}
 	
 	#myChallenges ul li{
@@ -786,6 +782,24 @@ textarea{
 		line-height: 130%;
 		margin-bottom: 10px;
 		margin-left: -25px;
+	}
+	
+	/******** Vidéos ********/
+	#video h2:first-child{
+		margin-top: 30px;
+	}
+	
+	#videoIntro{
+		display: block;
+		margin: 0 auto;
+		width: 92%;	
+		margin-bottom: 30px;
+	}
+	
+	#videoMinuteOfCode{
+		display: block;
+		margin: 0 auto;
+		width: 92%;
 	}
 	
 	/******** KNOWLEDGE PAGE ********/
@@ -987,7 +1001,7 @@ textarea{
 		margin-left: -20px;
 	}
 	
-	/******** CONTACT Page ********/
+	/******** CONTACT PAGE ********/
 	#texteContact{
 		width: 60%;
 		height: 160px;
@@ -1040,13 +1054,16 @@ textarea{
 }
 
 @media screen and (min-width: 480px) {	
+	
+	.mainDiv{
+		width: 80%;
+	}
 
 	/******** Back-to-top ********/
 	.cd-top {
 		width: 40px;
 		height: 40px;
-		bottom: 30px;
-		right: 20px;
+		bottom: 50%;
   	}
 	
 	/******** Menu links ********/
@@ -1102,7 +1119,7 @@ textarea{
 		width: 38%;
 		display: block;
 		margin: 0 auto;
-		border-radius: 20px;
+		border-radius: 40px;
 		margin-bottom: 10px;
 		margin-top: -15px;
 	}
@@ -1133,21 +1150,6 @@ textarea{
 		width: 0;
 	}
 	
-	/******** Vidéos ********/
-	#videoIntro{
-		display: block;
-		margin: 0 auto;
-		width: 91%;
-		height: 220px;
-	}
-	
-	#videoMinuteOfCode{
-		display: block;
-		margin: 0 auto;
-		width: 91%;
-		height: 220px;
-	}
-	
 	/******** 3rd block ********/
 	#interests p{
 		margin-left: -18px;
@@ -1155,10 +1157,14 @@ textarea{
 	}
 	
 	/******** 4th block ********/
+	#myChallenges{
+		height: 200px;
+	}
+	
 	#image_challenge{
-		width: 35%;
-		margin-left: 100px;
-		margin-top: 20px;
+		width: 30%;
+		display: block;
+		margin: 0 auto; 
 	}
 
 	#myChallenges ul li{
@@ -1166,8 +1172,30 @@ textarea{
 	}
 	
 	.objectifs{
-		margin-left: -18px;
+		margin-left: -33px;
 		font-size: 13px;
+	}
+	
+	/******** Vidéos ********/
+	#video h2:first-child{
+		margin-top: 50px;
+	}
+	
+	#videoIntro{
+		display: block;
+		margin: 0 auto;
+		width: 91%;
+		height: 250px;
+		margin-bottom: 50px;
+		box-shadow: 2px 1px 10px 5px #888888;
+	}
+	
+	#videoMinuteOfCode{
+		display: block;
+		margin: 0 auto;
+		width: 91%;
+		height: 250px;
+		box-shadow: 2px 1px 10px 5px #888888;
 	}
 	
 	/******** KNOWLEDGE PAGE ********/
@@ -1472,23 +1500,9 @@ textarea{
 	}
 	
 	#innovation_technology_head{
-		width: 0;
-	}
-	
-	/******** Vidéos ********/
-	#videoIntro{
-		display: block;
-		margin: 0 auto;
-		width: 94%;
-		height: 280px;
-	}
-	
-	#videoMinuteOfCode{
-		display: block;
-		margin: 0 auto;
-		width: 94%;
-		height: 280px;
-		margin-bottom: 20px;
+		width: 20%;
+		margin-top: 50px;
+		margin-left: 20px;
 	}
 	
 	/******** 3rd block ********/
@@ -1496,7 +1510,11 @@ textarea{
 		font-size: 12px;
 	}
 	
-	/******** Last block ********/
+	/******** 4th block ********/
+	#myChallenges{
+		height: 130px;
+	}
+	
 	#image_challenge{
 		width: 22%;
 		float: left;
@@ -1529,6 +1547,30 @@ textarea{
 		margin-top: 5px;
 		font-size: 13px;
 		padding-right: 5px;
+	}
+	
+	/******** Vidéos ********/
+	#video h2:first-child{
+		margin-top: 50px;
+	}
+	
+	#videoIntro{
+		display: block;
+		margin: 0 auto;
+		width: 80%;
+		height: 280px;
+		box-shadow: 2px 1px 10px 5px #888888;
+		margin-bottom: 50px;
+		
+	}
+	
+	#videoMinuteOfCode{
+		display: block;
+		margin: 0 auto;
+		width: 80%;
+		height: 280px;
+		margin-bottom: 10px;
+		box-shadow: 2px 1px 10px 5px #888888;
 	}
 	
 	/******** KNOWLEDGE PAGE ********/
@@ -1739,38 +1781,15 @@ textarea{
 	
 	#innovation_technology_head{
 		width: 20%;
-		margin-top: 50px;
+		margin-top: 30px;
 		margin-left: 70px;
 	}
 	
-	/******** Vidéos ********/
-	#video{
-		background-color: white;
-		padding-top: 8px;
-		padding-bottom: 8px;
-		margin-left: 20px; 
-		margin-right: 20px; 
-	}
-	
-	#videoIntro{
-		display: block;
-		margin: 0 auto;
-		width: 460px;
-		height: 265px;
-	}
-	
-	#videoMinuteOfCode{
-		display: block;
-		margin: 0 auto;
-		width: 460px;
-		height: 265px;
-	}
-	
-	/******** Last block ********/
+	/******** 4th block ********/
 	#image_challenge{
-		width: 22%;
+		width: 18%;
 		float: left;
-		margin-left: 50px;
+		margin-left: 30px;
 		margin-right: 40px;
 	}	
 
@@ -1780,6 +1799,26 @@ textarea{
 		font-family: 'Archivo Narrow', sans-serif;
 		line-height: 150%;	
 	}		
+	
+	/******** Vidéos ********/
+	#myChallenges{
+		height: 180px;
+	}
+	
+	#videoIntro{
+		display: block;
+		margin: 0 auto;
+		width: 460px;
+		height: 265px;
+		margin-bottom: 50px;
+	}
+	
+	#videoMinuteOfCode{
+		display: block;
+		margin: 0 auto;
+		width: 460px;
+		height: 265px;
+	}
 	
 	/******** KNOWLEDGE PAGE ********/
 	#titreMesConnaissances{
@@ -1889,6 +1928,10 @@ textarea{
 
 @media screen and (min-width: 1200px) {
 	
+	.mainDiv{
+		width: 70%;
+	}
+	
 	/******** Menu links ********/
 	.menuDiv{
 		margin-bottom: 50px;
@@ -1950,17 +1993,37 @@ textarea{
 	}
 	
 	#innovation_technology_head{
-		width: 21%;
+		width: 20%;
 		margin-top: 20px;
-		margin-left: 100px;
+		margin-left: 20px;
+	}
+	
+	/******** 3rd block ********/
+	#interests p{
+		font-size: 17px;
+	}
+	
+	/******** 4th block ********/
+	#myChallenges{
+		height: 200px;
+	}
+	
+	#image_challenge{
+		width: 20%;
+		float: left;
+		margin-left: 30px;
+		margin-right: 40px;
+	}
+
+	.objectifs{
+		list-style: none;
+		font-size: 18px;
+		font-family: 'Archivo Narrow', sans-serif;
+		line-height: 150%;	
 	}
 	
 	/******** Vidéos ********/
-	#video{
-		background-color: #c5d9ec;
-	}
-	
-	#videoIntro{
+ 	#videoIntro{
 		display: block;
 		margin: 0 auto;
 		width: 560px;
@@ -1974,30 +2037,6 @@ textarea{
 		width: 560px;
 		height: 315px;
 		margin-bottom: 20px;
-	}
-	
-	/******** 3rd block ********/
-	#interests p{
-		font-size: 17px;
-	}
-	
-	/******** Last block ********/
-	#myChallenges{
-		height: 200px;
-	}
-	
-	#image_challenge{
-		width: 220px;
-		float: left;
-		margin-left: 30px;
-		margin-right: 40px;
-	}
-
-	.objectifs{
-		list-style: none;
-		font-size: 18px;
-		font-family: 'Archivo Narrow', sans-serif;
-		line-height: 150%;	
 	}
 	
 	/******** KNOWLEDGE PAGE ********/
